@@ -1,9 +1,20 @@
+@font-face {
+  font-family: "steamwreck";
+  src: url("../fonts/Steamwreck/Steamwreck.otf");
+}
+@font-face {
+  font-family: "steamwreck-bold";
+  src: url("../fonts/Steamwreck/Steamwreck\ Bold.otf");
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system, steamwreck, Poppins, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  color: #fff;
 }
 
 a {
@@ -13,4 +24,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.app-layout-wrapper {
+  background: linear-gradient(252.82deg, #313131 0.54%, #0b0b0b 99.99%);
+}
+
+.gradient-font {
+  background: linear-gradient(188.06deg, #ffc75b 16.11%, #69490c 111.01%),
+    linear-gradient(181.25deg, #55adff 1.07%, #3b54ab 118.83%),
+    linear-gradient(170.48deg, #e2be62 7.18%, #977214 127.71%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
