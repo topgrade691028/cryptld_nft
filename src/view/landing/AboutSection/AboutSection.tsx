@@ -16,8 +16,8 @@ const AboutSection: React.FC = () => {
         <AboutCardWrapper>
           {[1, 2, 3, 4, 5].map((item: any, key: any) => (
             <AboutCard
-              style={{ marginTop: 10 * item + "%", marginBottom: "auto" }}
               key={key}
+              style={{ marginTop: 10 * item + "%", marginBottom: "auto" }}
             />
           ))}
         </AboutCardWrapper>

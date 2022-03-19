@@ -7,10 +7,6 @@ import { Container, MeetCard } from "components";
 import meetImg from "assets/images/meet.png";
 
 const MeetTeamSection: React.FC = () => {
-  const handleDrag = () => {
-    console.log("adsf");
-  };
-
   return (
     <MeetSectionWrapper>
       <Container>
@@ -39,12 +35,10 @@ const MeetTeamSection: React.FC = () => {
               slidesPerView: 6,
             },
           }}
-          onActiveIndexChange={handleDrag}
         >
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item: any) => (
-            <SwiperSlide>
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((item: number) => (
+            <SwiperSlide key={item}>
               <MeetCard
-                key={item}
                 img={meetImg}
                 name="Max"
                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
