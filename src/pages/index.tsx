@@ -1,6 +1,11 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { AboutSection, IntroSection, MintSection } from "view/landing";
+import {
+  AboutSection,
+  IntroSection,
+  JoinSection,
+  MintSection,
+} from "view/landing";
 
 const Home: NextPage = () => {
   return (
@@ -12,6 +17,7 @@ const Home: NextPage = () => {
       </Head>
       <IntroSection />
       <AboutSection />
+      <JoinSection />
       <MintSection />
     </div>
   );
