@@ -4,6 +4,7 @@ import {
   AboutSection,
   IntroSection,
   JoinSection,
+  MeetTeamSection,
   MintSection,
 } from "view/landing";
 
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
       </Head>
       <IntroSection />
       <AboutSection />
+      <MeetTeamSection />
       <JoinSection />
       <MintSection />
     </div>
