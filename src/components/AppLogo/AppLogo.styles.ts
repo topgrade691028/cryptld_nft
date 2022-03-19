@@ -10,6 +10,11 @@ export const AppLogoWrapper = styled.div`
     width: 46px;
     height: 46px;
   }
+  @media screen and (max-width: 650px) {
+    ::after {
+      display: none;
+    }
+  }
   ::after {
     content: "";
     width: 3px;
