@@ -20,7 +20,7 @@ const IntroSection: React.FC = () => {
           <IntroTitle className="gradient-font">Cryptid File NFTs</IntroTitle>
           <CustomButton
             onClick={() => {}}
-            borderColor={"#FFC75B #956B1B"}
+            borderColor={"#FFC75B, #956B1B"}
             fColor={"#CBA74A"}
             width={627}
             shadow="#916B21"

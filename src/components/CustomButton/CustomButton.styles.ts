@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { ButtonProps } from "./CustomButton";
 
 export const ButtonWrapper = styled.div<ButtonProps>`
-  background: linear-gradient(#ffc75b, #956b1b);
+  background: ${({ borderColor }) => "linear-gradient(" + borderColor + ")"};
   max-width: ${({ width }) => width}px;
   width: 100%;
   filter: drop-shadow(0px 0px 20.096px ${({ shadow }) => shadow});
