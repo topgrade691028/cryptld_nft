@@ -30,9 +30,9 @@ a {
 .app-layout-wrapper {
   background: linear-gradient(252.82deg, #313131 0.54%, #0b0b0b 99.99%);
 }
-
+/* #FFC75B, #956B1B */
 .gradient-font {
-  background: linear-gradient(188.06deg, #ffc75b 16.11%, #69490c 111.01%),
+  background: linear-gradient(188.06deg, #ffc75b 16.11%, #956b1b 111.01%),
     linear-gradient(181.25deg, #55adff 1.07%, #3b54ab 118.83%),
     linear-gradient(170.48deg, #e2be62 7.18%, #977214 127.71%);
   -webkit-background-clip: text;
