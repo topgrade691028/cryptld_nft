@@ -48,6 +48,7 @@ export const JoinTitle = styled.h1`
   font-size: 140px;
   line-height: 174px;
   transition: all 0.3s;
+  -webkit-text-stroke: 1px #ffffff50;
   @media screen and (max-width: 1560px) {
     font-size: 120px;
   }

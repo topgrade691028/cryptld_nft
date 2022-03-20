@@ -20,6 +20,7 @@ export const MintTitle = styled.h1`
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  -webkit-text-stroke: 1px #ffffff50;
   @media screen and (max-width: 1024px) {
     font-size: clamp(60px, 18vw, 140px);
   }

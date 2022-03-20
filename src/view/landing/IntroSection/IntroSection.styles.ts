@@ -39,7 +39,7 @@ export const IntroTitle = styled.h1`
   line-height: 174px;
   transition: all 0.3s;
 
-  -webkit-text-stroke: 1px #ffd86c;
+  -webkit-text-stroke: 1px #ffffff50;
   @media screen and (max-width: 1440px) {
     font-size: 120px;
   }
