@@ -38,11 +38,16 @@ export const IntroTitle = styled.h1`
   font-size: 140px;
   line-height: 174px;
   transition: all 0.3s;
-  @media screen and (max-width: 1360px) {
+
+  -webkit-text-stroke: 1px #ffd86c;
+  @media screen and (max-width: 1440px) {
     font-size: 120px;
   }
+  @media screen and (max-width: 1360px) {
+    font-size: 110px;
+  }
   @media screen and (max-width: 1165px) {
-    font-size: 105px;
+    font-size: 100px;
   }
   @media screen and (max-width: 1024px) {
     font-size: clamp(60px, 18vw, 140px);
@@ -58,6 +63,12 @@ export const IntroDesc = styled.p`
   line-height: 40px;
   max-width: 600px;
   width: 100%;
+  @media screen and (max-width: 1440px) {
+    font-size: 24px;
+  }
+  @media screen and (max-width: 1360px) {
+    font-size: 16px;
+  }
   @media screen and (max-width: 1024px) {
     font-size: clamp(20px, 5vw, 27px);
   }

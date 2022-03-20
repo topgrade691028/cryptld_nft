@@ -7,7 +7,7 @@ import { Polygon1, Polygon2 } from "../PolygonSection/PolygonSection.styles";
 
 import meetImg from "assets/images/meet.png";
 import polygonImg from "assets/images/polygon.png";
-
+import { Autoplay } from "swiper";
 const MeetTeamSection: React.FC = () => {
   const [poly1, setPoly1] = useState("");
   const [poly2, setPoly2] = useState("");
@@ -63,8 +63,13 @@ const MeetTeamSection: React.FC = () => {
           spaceBetween={30}
           slidesPerGroup={1}
           loop={true}
+          modules={[Autoplay]}
           loopFillGroupWithBlank={true}
           className="mySwiper"
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+          }}
           breakpoints={{
             475: {
               slidesPerView: 2,

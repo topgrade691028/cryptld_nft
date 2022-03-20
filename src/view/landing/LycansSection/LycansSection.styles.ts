@@ -13,8 +13,8 @@ export const LycansWrapper = styled.div`
     content: "";
     height: 5%;
     width: 150%;
-    background: linear-gradient(90deg, #ffabfc 50%, #ffffff, #f096ff);
-    box-shadow: 0 0 10px #ffabfc;
+    background: linear-gradient(90deg, #f096ff 30%, #ffffff, #ffabfc);
+    box-shadow: 0 0 30px #ffabfc;
     transform: rotateZ(-3deg);
     left: -30px;
   }
