@@ -7,6 +7,7 @@ import {
   LycansSection,
   MeetTeamSection,
   MintSection,
+  PolygonSection,
 } from "view/landing";
 
 const Home: NextPage = () => {
@@ -23,6 +24,7 @@ const Home: NextPage = () => {
       <JoinSection />
       <LycansSection />
       <MintSection />
+      <PolygonSection />
     </div>
   );
 };

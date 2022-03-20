@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const JoinSectionWrapper = styled.div`
   display: flex;
+  z-index: 1;
   justify-content: space-between;
   @media screen and (max-width: 1024px) {
     flex-direction: column;
@@ -9,6 +10,7 @@ export const JoinSectionWrapper = styled.div`
 `;
 
 export const JoinContentWrapper = styled.div`
+  z-index: 1;
   width: 43%;
   @media screen and (max-width: 1024px) {
     width: 100%;
@@ -20,6 +22,7 @@ export const JoinContentWrapper = styled.div`
 `;
 
 export const JoinImageWrapper = styled.div`
+  z-index: 1;
   width: 55%;
   @media screen and (max-width: 1560px) {
     width: 52%;

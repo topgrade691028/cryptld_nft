@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const LycansWrapper = styled.div`
+  margin-top: -2%;
+  margin-bottom: -3%;
   position: relative;
   overflow: hidden;
   padding: 9% 0 2%;
@@ -9,7 +11,7 @@ export const LycansWrapper = styled.div`
     z-index: 2;
     position: absolute;
     content: "";
-    height: 27px;
+    height: 5%;
     width: 150%;
     background: linear-gradient(90deg, #ffabfc 50%, #ffffff, #f096ff);
     box-shadow: 0 0 10px #ffabfc;

@@ -2,10 +2,15 @@ import styled from "styled-components";
 
 export const MeetSectionWrapper = styled.div`
   margin-top: -7%;
+  transition: all 0.3s;
+  margin-bottom: 100px;
+  position: relative;
   @media screen and (max-width: 1024px) {
     margin-top: 0;
   }
-  margin-bottom: 100px;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 30px;
+  }
 `;
 
 export const MeetTitle = styled.h1`
