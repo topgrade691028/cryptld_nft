@@ -15,6 +15,9 @@ export const Polygon2 = styled.img<{ transform: string }>`
   bottom: -30%;
   transform: ${({ transform }) => transform};
   z-index: 3;
+  @media screen and (max-width: 768px) {
+    bottom: 10%;
+  }
 `;
 
 export const Polygon3 = styled.img<{ transform: string }>`
