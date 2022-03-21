@@ -29,13 +29,13 @@ export const ButtonWrapper = styled.div<ButtonProps>`
   :hover {
     & > div {
       .span0 {
-        animation: glitch1 0.5s ease infinite 0.3s alternate-reverse;
+        animation: glitch1 0.5s ease 0.3s alternate-reverse;
       }
       .span1 {
-        animation: glitch2 0.5s ease infinite 0.3s alternate-reverse;
+        animation: glitch2 0.5s ease 0.3s alternate-reverse;
       }
       .span2 {
-        animation: glitch3 0.5s ease infinite 0.3s alternate-reverse;
+        animation: glitch3 0.5s ease 0.3s alternate-reverse;
       }
     }
   }
