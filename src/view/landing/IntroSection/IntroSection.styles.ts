@@ -5,8 +5,8 @@ export const IntroSectionWrapper = styled.div`
 `;
 
 export const IntroImgWrapper = styled.div`
-  display: flex;
-  justify-content: flex-end;
+  width: 100%;
+  text-align: right;
   img {
     margin-top: -4%;
     width: 65%;
