@@ -12,8 +12,8 @@ export const LycansWrapper = styled.div`
     position: absolute;
     content: "";
     height: 5%;
-    width: 150%;
-    background: linear-gradient(90deg, #f096ff 30%, #ffffff, #ffabfc);
+    width: 120%;
+    background: linear-gradient(90deg, #f096ff 40%, #ffffff, #ffabfc);
     box-shadow: 0 0 30px #ffabfc;
     transform: rotateZ(-3deg);
     left: -30px;
@@ -30,7 +30,7 @@ export const LycansWrapper = styled.div`
 export const UnderLay = styled.div`
   background-color: #000;
   position: absolute;
-  width: 150%;
+  width: 120%;
   transform: rotateZ(-3deg);
   height: calc(100% - 180px);
   z-index: 0;

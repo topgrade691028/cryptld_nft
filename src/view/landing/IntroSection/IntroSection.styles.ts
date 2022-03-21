@@ -73,3 +73,11 @@ export const IntroDesc = styled.p`
     font-size: clamp(20px, 5vw, 27px);
   }
 `;
+
+export const ButtonWrapper = styled.div`
+  width: 90%;
+  @media screen and (max-width: 1024px) {
+    display: flex;
+    justify-content: center;
+  }
+`;

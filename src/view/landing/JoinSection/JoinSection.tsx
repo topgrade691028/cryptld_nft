@@ -8,7 +8,6 @@ import {
   JoinSectionWrapper,
   JoinTitle,
 } from "./JoinSection.styles";
-import joinImg from "assets/images/join.png";
 import polygonImg from "assets/images/polygon.png";
 
 const JoinSection: React.FC = () => {
@@ -67,6 +66,7 @@ const JoinSection: React.FC = () => {
             fColor={"#A34AEA"}
             width={627}
             shadow="#CB5BFF"
+            title="Join Server"
           >
             {"Join Server"}
           </CustomButton>
@@ -87,7 +87,10 @@ const JoinSection: React.FC = () => {
           </JoinDesc>
         </JoinContentWrapper>
         <JoinImageWrapper>
-          <img src={joinImg.src} alt="joinImg" />
+          <iframe
+            src="https://emerald.widgetbot.io/channels/299881420891881473/450428756855750666/?api=4e62dd84-5aee-4bf8-9f95-edf38fd61474"
+            title="Discord chat embed"
+          />
         </JoinImageWrapper>
       </JoinSectionWrapper>
     </Container>

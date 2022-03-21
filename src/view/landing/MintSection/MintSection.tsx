@@ -18,6 +18,7 @@ const MintSection: React.FC = () => {
           fColor={"#A34AEA"}
           width={732}
           shadow="#CB5BFF"
+          title="Mint Yours Now >"
         >
           {"Mint Yours Now >"}
         </CustomButton>

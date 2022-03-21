@@ -1,6 +1,6 @@
 import React from "react";
 
-import { ButtonWrapper } from "./CustomButton.styles";
+import { ButtonDiv, ButtonWrapper } from "./CustomButton.styles";
 
 export interface ButtonProps {
   borderColor: string;
@@ -8,12 +8,14 @@ export interface ButtonProps {
   width: number;
   onClick: VoidFunction;
   shadow: string;
+  title?: string;
 }
 
 const CustomButton: React.FC<ButtonProps> = ({
   children,
   borderColor,
   width,
+  title,
   onClick,
   fColor,
   shadow,
@@ -26,7 +28,7 @@ const CustomButton: React.FC<ButtonProps> = ({
       width={width}
       shadow={shadow}
     >
-      {children}
+      <ButtonDiv title={title}>{children}</ButtonDiv>
     </ButtonWrapper>
   );
 };

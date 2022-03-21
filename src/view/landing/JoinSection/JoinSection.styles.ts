@@ -27,15 +27,17 @@ export const JoinImageWrapper = styled.div`
   @media screen and (max-width: 1560px) {
     width: 52%;
   }
-  img {
+  iframe {
     margin-top: 40px;
     width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 20px;
   }
   @media screen and (max-width: 1024px) {
     width: 100%;
-    img {
+    iframe {
       margin-top: 0;
-      width: 100%;
     }
   }
 `;

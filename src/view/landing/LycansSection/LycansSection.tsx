@@ -16,7 +16,7 @@ const LycansSection: React.FC = () => {
       <LycansGroup>
         {[lycanImg1, lycanImg2, lycanImg1, lycanImg2].map(
           (item: any, key: any) => (
-            <ImgWrapper key={key} style={{ marginTop: `-${key * 1.3}%` }}>
+            <ImgWrapper key={key} style={{ marginTop: `-${key * 1.5}%` }}>
               <img src={item.src} alt="lycanImg1" />
             </ImgWrapper>
           )
