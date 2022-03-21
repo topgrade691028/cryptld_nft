@@ -27,75 +27,86 @@ export const ButtonWrapper = styled.div<ButtonProps>`
     background: #0b0b0b;
   }
   :hover {
-    div {
-      animation: glitch 1s linear infinite;
-      ::before {
-        animation: glitchTop 1s linear infinite;
+    & > div {
+      .span0 {
+        animation: glitch1 0.5s ease infinite 0.3s alternate-reverse;
       }
-      ::after {
-        animation: glitchBotom 1.5s linear infinite;
+      .span1 {
+        animation: glitch2 0.5s ease infinite 0.3s alternate-reverse;
       }
+      .span2 {
+        animation: glitch3 0.5s ease infinite 0.3s alternate-reverse;
+      }
+    }
+  }
+  @keyframes glitch1 {
+    0% {
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      transform: translate(8px);
+    }
+    10% {
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    20%,
+    100% {
+      text-shadow: none;
+      transform: none;
+    }
+  }
+  @keyframes glitch2 {
+    0% {
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      transform: translate(-8px);
+    }
+    10% {
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    20%,
+    100% {
+      text-shadow: none;
+      transform: none;
+    }
+  }
+  @keyframes glitch3 {
+    0% {
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      transform: translate(8px);
+    }
+    10% {
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    20%,
+    100% {
+      text-shadow: none;
+      transform: none;
     }
   }
 `;
 
 export const ButtonDiv = styled.div`
-  position: relative;
-  @keyframes glitch {
-    2%,
-    64% {
-      transform: translate(2px, 0) skew(0deg);
-    }
-    4%,
-    60% {
-      transform: translate(-2px, 0) skew(0deg);
-    }
-    62% {
-      transform: translate(0, 0) skew(5deg);
-    }
-  }
-  ::before,
-  ::after {
-    content: attr(title);
-    position: absolute;
-    left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  span {
+    grid-row-start: 1;
+    grid-column-start: 1;
   }
 
-  ::before {
-    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  .span0 {
+    clip-path: inset(
+      calc(calc(100% / 3 - 1px) * 0) 0
+        calc(calc(100% / 3 - 1px) * calc(calc(3 - 1) - 0)) 0
+    );
   }
-
-  @keyframes glitchTop {
-    2%,
-    64% {
-      transform: translate(2px, -2px);
-    }
-    4%,
-    60% {
-      transform: translate(-2px, 2px);
-    }
-    62% {
-      transform: translate(13px, -1px) skew(-13deg);
-    }
+  .span1 {
+    clip-path: inset(
+      calc(calc(100% / 3 - 1px) * 1) 0
+        calc(calc(100% / 3 - 1px) * calc(calc(3 - 1) - 1)) 0
+    );
   }
-
-  ::after {
-    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
-  }
-
-  @keyframes glitchBotom {
-    2%,
-    64% {
-      transform: translate(-2px, 0);
-    }
-    4%,
-    60% {
-      transform: translate(-2px, 0);
-    }
-    62% {
-      transform: translate(-22px, 5px) skew(21deg);
-    }
+  .span2 {
+    clip-path: inset(
+      calc(calc(100% / 3 - 1px) * 2) 0
+        calc(calc(100% / 3 - 1px) * calc(calc(3 - 1) - 2)) 0
+    );
   }
 `;

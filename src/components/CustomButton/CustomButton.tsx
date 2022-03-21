@@ -28,7 +28,11 @@ const CustomButton: React.FC<ButtonProps> = ({
       width={width}
       shadow={shadow}
     >
-      <ButtonDiv title={title}>{children}</ButtonDiv>
+      <ButtonDiv>
+        <span className="span0">{children}</span>
+        <span className="span1">{children}</span>
+        <span className="span2">{children}</span>
+      </ButtonDiv>
     </ButtonWrapper>
   );
 };
