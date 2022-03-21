@@ -10,6 +10,7 @@ export const IntroImgWrapper = styled.div`
   img {
     margin-top: -4%;
     width: 65%;
+    height: -webkit-fill-available;
   }
 `;
 
