@@ -9,6 +9,7 @@ import {
   MintSection,
   PolygonSection,
 } from "view/landing";
+import { MyMark } from "components/MyMark";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +26,7 @@ const Home: NextPage = () => {
       <LycansSection />
       <MintSection />
       <PolygonSection />
+      <MyMark />
     </div>
   );
 };
